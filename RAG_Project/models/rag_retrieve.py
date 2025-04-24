@@ -3,6 +3,10 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
+import logging
+import coloredlogs
+from RAG_Project.configs.logging_config import setup_logging
+
 
 class RagImplementation:
   def __init__(self, file):

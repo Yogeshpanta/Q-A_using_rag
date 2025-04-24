@@ -2,6 +2,9 @@
 # from RAG_Project.configs.logging_config import setup_logging
 from RAG_Project.models.rag_retrieve import RagImplementation
 from RAG_Project.models.text_generator import TunedChatGeneration
+import logging
+import coloredlogs
+from RAG_Project.configs.logging_config import setup_logging
 # from RAG_Project.experiments.test1 import TunedChatGeneration
 
 file_path = "C:/Users/Acer/OneDrive/Desktop/veel_internship_final/transformer.pdf"
