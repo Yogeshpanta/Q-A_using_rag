@@ -1,5 +1,8 @@
 
 from langchain_core.prompts import ChatPromptTemplate
+import logging
+import coloredlogs
+from RAG_Project.configs.logging_config import setup_logging
 
 class RagChatPrompt:
   
