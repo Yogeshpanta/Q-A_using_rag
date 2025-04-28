@@ -1,11 +1,5 @@
-
-from langchain_core.prompts import ChatPromptTemplate
-import logging
-import coloredlogs
-from RAG_Project.configs.logging_config import setup_logging
-
 # class RagChatPrompt:
-  
+
 # #   prompt = ChatPromptTemplate.from_messages(
 # #     [
 # #         (
@@ -26,6 +20,7 @@ from RAG_Project.configs.logging_config import setup_logging
 # #         ),
 # #     ]
 # # )
+
 
 class RagChatPrompt:
     SINGLE_LINE_TEMPLATE = """You are an expert assistant. Use the following context to answer the question briefly in one line.
