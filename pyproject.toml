@@ -7,7 +7,9 @@ requires-python = ">=3.11"
 dependencies = [
     "chromadb>=0.6.3",
     "colorlog>=6.9.0",
+    "dotenv>=0.9.9",
     "fastapi>=0.115.12",
+    "ipykernel>=6.29.5",
     "langchain-community>=0.3.22",
     "langchain-huggingface>=0.1.2",
     "langchain-openai>=0.3.14",
@@ -15,6 +17,7 @@ dependencies = [
     "pypdf>=5.4.0",
     "python-multipart>=0.0.20",
     "rank-llm>=0.21.0",
+    "redis>=6.0.0",
     "sentence-transformers>=4.1.0",
     "torch>=2.7.0",
     "transformers>=4.51.3",

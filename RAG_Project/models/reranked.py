@@ -1,3 +1,7 @@
+from RAG_Project.configs.logging_config import setup_logging
+import logging
+
+setup_logging()
 class Reranker:
     def __init__(self, rag_implementation):
         self.rag_system = rag_implementation
@@ -9,4 +13,5 @@ class Reranker:
             [(doc, score) for doc, score in docs_with_scores], key=lambda x: x[1]
         )
         top_docs = [doc for doc, _ in filtered_sorted[:top_n]]
+        logging.info("Generating ranked results")
         return top_docs
