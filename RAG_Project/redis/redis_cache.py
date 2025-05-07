@@ -3,8 +3,14 @@ from RAG_Project.configs.logging_config import setup_logging
 import logging
 from RAG_Project.models.reranked import Reranker
 import redis
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 setup_logging()
+
+host = os.getenv("REDIS_HOST", "localhost")
+port = int(os.getenv("REDIS_PORT", 6379))
 
 # class RedisImplementation:
 #     def __init__(self, chat_bot, query: str, use_ranked: bool = False):
@@ -37,7 +43,9 @@ class RedisImplementation:
         self.chat_bot = chat_bot
         self.query = query
         self.style = style
-        self.redis_client = redis.Redis(host="localhost", port=6379, db=0)
+        # self.redis_client = redis.Redis(host="0.0.0.0", port=6379, db=0)
+        self.redis_client = redis.Redis(host=host, port=port, db=0)
+
 
     def single_line_redis(self):
         # self.style = style
