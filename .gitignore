@@ -17,7 +17,6 @@ ENV/
 
 # Docker
 *.dockerignore
-Dockerfile
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
@@ -32,7 +31,7 @@ Thumbs.db
 
 # Logs
 *.log
-.chroma_db/
+chroma_db/
 
 # Tests
 tests/.pytest_cache/
@@ -42,3 +41,4 @@ notebooks/
 
 # Experiments
 */experiments/
+*/chroma_db/
